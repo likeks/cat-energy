@@ -1,0 +1,8 @@
+.button-burger {
+  @media (max-width: $mobile-width-only) {
+    width: 24px;
+    height: 24px;
+    background-color: $color-light;
+    background-image: url("../../icons/stack.svg#icon-burger");
+  }
+}
