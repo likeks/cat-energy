@@ -1,0 +1,12 @@
+@mixin program-form() {
+  font-size: 16px;
+  line-height: 113%;
+  text-transform: uppercase;
+  color: $text-color-primary;
+}
+
+.program-form__label,
+.program-form__input,
+.program-form__input::placeholder {
+  @include program-form;
+}

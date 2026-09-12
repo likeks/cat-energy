@@ -1,0 +1,50 @@
+.features__title {
+  font-size: 36px;
+  line-height: 111%;
+}
+
+.features__description {
+  font-family: $font-secondary;
+  line-height: 129%;
+  color: $text-color-primary;
+  margin: 0;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item {
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $bg-color-basic;
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--benefit::before {
+    background-image: url("../../icons/stack.svg#icon-benefit");
+  }
+
+  &--usability::before {
+    background-image: url("../../icons/stack.svg#icon-usability");
+  }
+
+  &--change::before {
+    background-image: url("../../icons/stack.svg#icon-change");
+  }
+
+  &--profit::before {
+    background-image: url("../../icons/stack.svg#icon-profit");
+  }
+}
